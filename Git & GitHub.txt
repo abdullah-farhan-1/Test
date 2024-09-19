@@ -1,0 +1,182 @@
+
+
+
+Notes: https://videotutorials.notion.site/Introduction-to-Git-ac396a0697704709a12b6a0e545db049#8ef167b4285649fb9de21e4bb4114d66
+
+
+
+
+                        GIT
+
+
+
+GIT is a distributed version control system that allows us to track changes in an application overtime across different users.
+
+
+
+
+-- REPOSITORIES: A GIT repository is a container for a project that is tracked by Git. 
+
+
+-- GIT INIT: Anytime we use GIT on a project or on a single file, we would need to initialize a repository.
+
+
+To intialize a repo, we use:
+
+--> git init
+
+
+
+If we need to track changes using git, we would first go to the specific folder:
+
+
+Abdullah Farhan@ABYSS-PK-AIT111 MINGW64 /c/users/abdullah/Desktop/WD Bootcamp/Git & GitHub
+ 
+
+Then in that folder, run git init:
+
+Abdullah Farhan@ABYSS-PK-AIT111 MINGW64 /c/users/abdullah/Desktop/WD Bootcamp/Git & GitHub
+$ git init
+
+
+Then we can use ls -a to view the hidden files in the folder, where we can see a .git folder created by git and used by git to store information about our repository. 
+
+
+
+
+
+-- GIT STATUS: Use this command to check the status of our repository, like how many commits are made etc.
+
+--> git status
+
+
+
+Example: Suppose we are working on a project where we make a new file by doing:
+
+touch index.html
+
+
+After creating, we type git status now:
+
+git status
+
+
+Now we see our created file index.html as an untracked file in the terminal. With commiting, there are usually 2 steps: First we have to decide which files and changes we want to add into the staging area, and then from the staging area, we commit the files.
+
+
+
+To add our file to the staging area:
+
+git add index.html
+
+
+
+Once added to the staging area, we can then commit our file. There are different ways to commit, the simplest way is:
+
+git commit -m "commit message"
+
+
+So, we commit as:
+
+git commit -m "created index.html"
+
+
+
+This will commit our files and our working tree will be clean now. We can check the logs as:
+
+git log
+
+
+This will tell us the particular author name, the date and the history of the commit.
+
+
+Now suppose create app.js, styles.css and we modify our index.html file in VS code. Then upon checkin git status, we see the terminal telling us that app.js and styles.css are untracked files (as we didn't add them to the staging area) and index.html is modified (as we modified it using VS code)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
